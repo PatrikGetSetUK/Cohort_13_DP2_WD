@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styled Form</title>
+    <style>
+        /* CSS code here CTRL / */
+
+        /* Style the form container */
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #dddddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(154, 154, 154, 0.7);
+        }
+
+        /* Style the form heading */
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Style the form inputs */
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container input[type="password"],
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            /* Include padding and border in element's total width and height */
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the form submit button */
+        .form-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+            border:none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        /* Style the form submit button on hover */
+        .form-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Sign Up</h2>
+
+        <form>
+            <input type="text" name="username" id="username" placeholder="Username">
+
+            <input type="email" name="email" id="email" placeholder="Email">
+
+            <input type="password" name="password" id="password" placeholder="Password" required>
+
+            <textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>

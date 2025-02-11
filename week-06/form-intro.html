@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form introduction</title>
+</head>
+
+<body>
+    <!-- Simple form CTRL / -->
+    <form>
+        <fieldset>
+            <legend>Contact Information:</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Message:</legend>
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" rows="4" required></textarea>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+
+
+    <!-- Form - input types fields CTRL / -->
+    <form>
+        <input type="text" placeholder="Text field"><br>
+        <input type="number" placeholder="Number field"><br>
+        <input type="email" placeholder="Email field"><br>
+        <input type="tel" placeholder="Telephone number"><br>
+        <input type="password" placeholder="Enter your password"><br>
+        <input type="search" placeholder="Search..."><br>
+        <input type="date"><br>
+        <input type="color"><br>
+        <input type="file"><br>
+    </form>
+
+    <!-- form>input[type=text]*3 -->
+    <form action=""><input type="text"><input type="text"><input type="text"></form>
+
+    <!-- Select an option -->
+    <form>
+        <input type="radio" name="language" id="en" value="English">
+        <label for="en">English</label><br>
+
+        <input type="radio" name="language" id="html" value="HTML">
+        <label for="html">HTML</label><br>
+
+        <input type="radio" name="language" id="css" value="CSS">
+        <label for="css">CSS</label><br>
+
+        <input type="radio" name="language" id="js" value="JavaScript">
+        <label for="js">JavaScript</label>
+    </form>
+
+    <!-- Select multiple option(s) -->
+    <form>
+        <input type="checkbox" name="czech" id="czech" value="Czech">
+        <label for="czech">I am Czech.</label><br>
+
+        <input type="checkbox" name="checked-true" id="checked-true" value="Checked-true" checked>
+        <label for="checked-true">I am checked.</label><br>
+
+        <input type="checkbox" name="czech-checked" id="czech-checked" value="Czech-checked">
+        <label for="czech-checked">I am checked by Czech.</label>
+    </form>
+
+
+    <!-- Dropdown list -->
+    <form>
+        <label for="coding-language">Choose a coding language:</label>
+        <select name="coding-language" id="coding-language">
+            <option value="none">---</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JS</option>
+            <option value="python">Python</option>
+        </select>
+    </form>
+
+
+</body>
+
+</html>

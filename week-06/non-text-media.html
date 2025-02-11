@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images, audio, video</title>
+</head>
+
+<body>
+    <h1>Non-text media in the HTML</h1>
+
+    <h2>Images</h2>
+    <!-- Absolute path - image with URL link CTRL / -->
+    <img src="https://www.getsetuk.co.uk/wp-content/themes/wordpressbase-main/includes/imgs/main-logo-new.png"
+        alt="Get Set UK logo" height="64">
+
+    <!-- Relative path - image saved within our project folder CTRL / -->
+    <img src="./media/back-to-work.webp" alt="Get Set UK graphic" height="100">
+
+    <h2>Audio</h2>
+    <audio controls>
+        <source src="./media/bbc-scottish-bird.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h2>Video</h2>
+    <!-- YouTube video external CTRL / -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uJHgQa9jT8Y?si=_JkqZYErshi96Awj&amp;start=1"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!-- Video saved within our project folder. CTRL / -->
+    <video controls width="320" height="240">
+        <source src="./media/aardman-short-films.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+</body>
+
+</html>
