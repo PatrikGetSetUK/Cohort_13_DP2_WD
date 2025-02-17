@@ -1,0 +1,48 @@
+:root {
+  /* Variables */
+
+  /* Typography */
+  --font-default: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  --font-heading: "Courier New", Courier, monospace;
+  --font-default-size: 14px;
+  --font-heading-weight: bold;
+  --font-color-primary: blue;
+  --font-color-secondary: green;
+
+  /* Colours */
+  --color-bg-primary: white;
+  --color-bg-secondary: lightblue;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+  --space-xl: 64px;
+}
+
+body {
+  font-family: var(--font-default);
+  font-size: var(--font-default-size);
+  color: var(--font-color-primary);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-heading-weight);
+  color: var(--font-color-secondary);
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
