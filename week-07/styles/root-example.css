@@ -1,0 +1,24 @@
+:root {
+  /* Typography */
+  --font-default: Arial, Helvetica, sans-serif;
+  --font-secondary: "Courier New", Courier, monospace;
+
+  /* Colour */
+  --color-red: #970000;
+  --color-green: #159a20;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-default);
+  color: var(--color-green);
+}
+
+p {
+  font-family: var(--font-default);
+  background-color: var(--color-red);
+}

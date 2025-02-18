@@ -1,0 +1,95 @@
+/* Colours */
+.highlight {
+  color: orange;
+  background-color: #980000;
+  border: 5px solid rgba(0, 128, 0, 0.8);
+  outline: 5px dotted #30a9ff;
+  box-shadow: 10px 10px 8px #ff00d9;
+}
+
+/* Image as background */
+/* body {
+  background-image: url("../images/background-cover-body.jpg");
+  background-color: #c3c3c3;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+} */
+
+/* Gradient */
+.box-gradient {
+  height: 350px;
+  width: 350px;
+
+  background: rgb(199, 58, 110);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(199, 58, 110, 1) 7%,
+    rgba(228, 84, 75, 1) 43%,
+    rgba(255, 109, 42, 1) 95%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(199, 58, 110, 1) 7%,
+    rgba(228, 84, 75, 1) 43%,
+    rgba(255, 109, 42, 1) 95%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(199, 58, 110, 1) 7%,
+    rgba(228, 84, 75, 1) 43%,
+    rgba(255, 109, 42, 1) 95%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c73a6e",endColorstr="#ff6d2a",GradientType=1);
+}
+
+/* Pattern */
+.bg-pattern {
+  width: 350px;
+  height: 350px;
+
+  background-color: #e5e5f7;
+  opacity: 0.4;
+  background-image: radial-gradient(#444cf7 1.75px, #e5e5f7 1.75px);
+  background-size: 35px 35px;
+}
+
+/* Hero Image */
+.hero-image {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../images/hero-image.png");
+    
+    height: 50vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hero-text button:hover {
+    background-color: #555;
+    color: white;
+}
