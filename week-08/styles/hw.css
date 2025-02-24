@@ -1,0 +1,16 @@
+:root {
+
+    /* Variables */
+    /* Fonts */
+    --font-default: 'Courier New', Courier, monospace;
+}
+
+body {
+    /* Using body to apply inheritance for all text elements. */
+    font-family: var(--font-default);
+}
+
+/* button is NOT a text element */
+button {
+    font-family: var(--font-default);
+}

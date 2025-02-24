@@ -1,0 +1,31 @@
+div {
+    width: 300px;
+    min-width: 250px;
+    max-width: 320px;
+
+    height: 300px;
+    min-height: 250px;
+    max-height: 320px;
+
+    border: 1px solid red;
+    border-radius: 10px;
+
+    outline: 5px solid yellow;
+
+    /* box-shadow: 10px 10px 10px green;
+    box-shadow: inset  10px 10px 5px blue; */
+    
+    box-shadow:
+        8px 8px 10px lightgreen,
+        inset 8px 8px 10px orange;
+
+    padding: 20px;
+    padding: 50px 80px;
+    padding: 10px 20px 50px 7px;
+    padding-left: 50px;
+
+    margin: 100px;
+    margin: 20px 30px;
+    margin: 5px 10px 50px 7px;
+    margin-top: 200px;
+}
