@@ -1,0 +1,54 @@
+/* Example of Grid layout */
+.grid-parent {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: green;
+  padding: 0.5em;
+  column-gap: 1em;
+  row-gap: 0.2em;
+}
+
+.grid-child {
+  background-color: lightgreen;
+  text-align: center;
+  border: 1px solid mediumseagreen;
+  padding: 0.5em;
+}
+
+/* Grid web layout */
+.header {
+  grid-area: header;
+  background-color: red;
+}
+
+.menu {
+  grid-area: menu;
+  background-color: green;
+}
+
+.main {
+  grid-area: main;
+  background: yellow;
+}
+
+.aside {
+  grid-area: aside;
+  background-color: orange;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: cornflowerblue;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header  header  header  header  header"
+    "menu   .       main    main       .    aside"
+    "footer footer  footer  footer  footer  footer";
+
+  gap: 0.5em;
+  background-color: midnightblue;
+  padding: 0.5em;
+}
