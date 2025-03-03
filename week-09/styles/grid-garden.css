@@ -1,0 +1,27 @@
+/* Visual helper */
+* {
+    outline: 1px solid red;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: green;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2px;
+    border-radius: 5px;
+    padding: 10px;
+    background: #573308;
+}
