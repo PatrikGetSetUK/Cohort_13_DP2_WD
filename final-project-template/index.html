@@ -66,7 +66,7 @@
         <section id="about">
             <h2>About</h2>
             <a href="./index.html">
-                <img src="./images/tomorrowland-logo.webp" alt="logo">
+                <img class="main-logo" src="./images/tomorrowland-logo.webp" alt="logo">
             </a>
             <p>Live Today, Love Tomorrow, Unite Forever. Tomorrowland is the best festival experience you'll ever
                 encounter. Tomorrowland is immensely thankful and honoured to have returned to Brazil. Together, we have
@@ -85,6 +85,31 @@
         <section id="events">
             <h2>Events</h2>
             <!-- TODO: Carousel / Slide show -->
+            <div class="carousel-container">
+                <!-- Image slides  -->
+                <div class="carousel-slide">
+                    <img src="./images/slideshow1.webp" alt="Image 1" />
+                    <img src="./images/slideshow2.webp" alt="Image 2" />
+                    <img src="./images/slideshow3.webp" alt="Image 3" />
+                </div>
+
+                <!-- Left and right arrows -->
+                <div class="carousel-navigation">
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                </div>
+
+                <!-- Bullet points indicators -->
+                <div class="carousel-bullets">
+                    <span class="bullet"></span>
+                    <span class="bullet"></span>
+                    <span class="bullet"></span>
+                </div>
+            </div>
+
+            <!-- External JS file for the carousel -->
+            <script src="./scripts/script-carousel.js"></script>
+
         </section>
 
         <!-- Merchandise section -->
@@ -143,7 +168,8 @@
             <h2>Tickets</h2>
             <p>
                 With your <strong>Tomorrowland Account</strong>, you have exclusive
-                Early-Access to the <strong>Pre-Sale</strong> on <strong>April 18, 2024</strong>, to purchase Tickets at a reduced price before the start of the General Sale.
+                Early-Access to the <strong>Pre-Sale</strong> on <strong>April 18, 2024</strong>, to purchase Tickets at
+                a reduced price before the start of the General Sale.
             </p>
             <button type="button">BUY TICKETS</button>
         </section>
@@ -151,19 +177,20 @@
 
     <footer>
         <!-- Social media links & icons -->
-       <ul class="social-media-icons">
+        <ul class="social-media-icons">
             <li><a href="#"><img src="./images/icon-twitter.svg" alt="twitter" class="social-icon"></a></li>
             <li><a href="#"><img src="./images/icon-facebook.svg" alt="facebook" class="social-icon"></a></li>
             <li><a href="#"><img src="./images/icon-instagram.svg" alt="instagram" class="social-icon"></a></li>
             <li><a href="#"><img src="./images/icon-linkedin.svg" alt="linkedin" class="social-icon"></a></li>
-       </ul>
+        </ul>
 
-       <!-- Legal links in the footer -->
-       <p>
-        <a href="#">legal</a> | <a href="#">cookies</a> | <a href="#">sitemap</a> | <a href="#page-top" class="button-back-top">back to top &#11014;</a> 
-       </p>
+        <!-- Legal links in the footer -->
+        <p>
+            <a href="#">legal</a> | <a href="#">cookies</a> | <a href="#">sitemap</a> | <a href="#page-top"
+                class="button-back-top">back to top &#11014;</a>
+        </p>
 
-       <!-- Copyrights -->
+        <!-- Copyrights -->
         <p class="rights">&copy; 2025 Tomorrowland. All rights reserved.</p>
     </footer>
 </body>

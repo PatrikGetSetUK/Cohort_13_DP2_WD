@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume of Sphere</title>
+
+    <style>
+        label,
+        input {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Input radius value and get the volume of a sphere.</p>
+
+    <form>
+        <label for="radius">Radius:</label>
+        <input type="number" name="radius" id="radius" required autofocus>
+        <br>
+        <button type="button" onclick="volumeSphere()">Calculate</button>
+    </form>
+
+    <p id="output">Volume: </p>
+
+    <script>
+        function volumeSphere() {
+            // INPUT
+            const radius = document.getElementById("radius").value;
+
+            // LOGIC
+            if (radius > 0) {
+                // V = 4/3 π r³
+                const volume = ((4 / 3) * Math.PI * Math.pow(radius, 3)).toFixed(2);
+
+                // OUTPUT
+                document.getElementById("output").textContent = `Volume: ${volume} cubic units`;
+            } else {
+                document.getElementById("output").textContent = `Please enter a valid radius, greater than zero.`;
+            }
+        }
+    </script>
+</body>
+
+</html>
