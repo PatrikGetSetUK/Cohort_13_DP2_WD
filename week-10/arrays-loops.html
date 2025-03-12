@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays & Loops</title>
+</head>
+<body>
+    <script>
+        // Arrays
+        const transport = ["car", "bike", "plane", "ship"];
+
+        console.log(transport);
+        console.log(transport[2]);
+        
+        // To add some value into the array methods
+        transport.push("motorbike");
+        console.log(transport);
+        
+        transport.unshift("scooter");
+        console.log(transport);
+        
+        transport.splice(3, 0, "submarine");
+        console.log(transport);
+        
+        // To delete some value(s) from array methods
+        transport.pop();
+        console.log(transport);
+        
+        transport.shift();
+        console.log(transport);
+        
+        transport.splice(1, 2);
+        console.log(transport);
+
+
+        // Loops
+        // For loop
+        for (let i = 0; i < 4; i++) {
+            console.log("Hello World!");
+        }
+
+        for (let i = 0; i < 5; i++) {
+            console.log("Current index is: " + i)
+        }
+
+        // Create following patter:
+        // *
+        // **
+        // ***
+        // ****
+        // *****
+        // solution 1
+        for (let x = 1; x <=6; x++) {
+            let character = "";
+
+            for (let y = 0; y < x; y++) {
+                character += "*";
+            }
+            console.log(character);
+        }
+
+        // solution 2
+        for (let x = 1; x <= 6; x++) {
+            console.log("*".repeat(x));
+        }
+
+        // Foreach loop
+        const names = ["Patrik", "Iram", "Sofia", "Amal"];
+
+        names.forEach(name => {
+            console.log("Hi " + name);
+        });
+    </script>
+</body>
+</html>

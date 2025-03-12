@@ -122,7 +122,6 @@ nav {
   display: flex;
   align-items: center;
   position: relative;
-  width: 100%;
   justify-content: flex-end;
 }
 
@@ -177,7 +176,6 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 
 section {
@@ -313,4 +311,54 @@ section {
 .info {
   text-align: left;
   padding: 1rem 2rem;
+}
+
+footer {
+  align-self: stretch;
+  text-align: center;
+  box-shadow: 0 -5rem 3rem var(--color-shadow);
+  margin-top: auto;
+  padding: 1rem 0 2rem 0;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.social-icon {
+  height: 2rem;
+  min-height: 2rem;
+  filter: invert(100%);
+  margin: 1rem;
+}
+
+.button-back-top {
+  align-self: flex-end;
+  text-align: right;
+  margin: 0.5rem;
+}
+
+.rights {
+  font-size: small;
+  margin-top: 1rem;
+}
+
+/* #1.2 For Tablet & Desktop */
+@media (min-width: 48rem) {
+  .menu {
+    display: flex;
+    position: static;
+    width: auto;
+  }
+
+  .menu li {
+    text-align: left;
+  }
+
+  .burger-menu {
+    display: none;
+  }
 }
